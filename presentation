@@ -1,0 +1,20 @@
+FPGA Implementation of a Support Vector Machine (SVM)
+
+* What is a Support Vector Machine?
+** SVMs are classifiers
+** Machine Learning method
+** Some similarity to Perceptrons
+
+* The Formula
+
+* Hardware Implementation issues:
+** exp()
+*** lookup table issues
+**** resolution and range 
+***** Range x: -12.25 to 0
+***** 128 entries (18bits: 2 bits for integer part, 16 bits for fractional part)
+** Other lookup tables:
+*** alpha (242X16)
+*** sv (support vectors) (485X16)
+
+ 

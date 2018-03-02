@@ -1,0 +1,550 @@
+Release 7.1.01i - xst H.39
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.02 / 0.84 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.86 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: csvm.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "csvm.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "csvm"
+Output Format                      : NGC
+Target Device                      : xc3s200-5-ft256
+
+---- Source Options
+Top Module Name                    : csvm
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : csvm.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+enable_auto_floorplanning          : No
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd" in Library work.
+Entity <sv_lut> compiled.
+Entity <sv_lut> (Architecture <sv_lut_syn>) compiled.
+Compiling vhdl file "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd" in Library work.
+Entity <alpha_lut> compiled.
+Entity <alpha_lut> (Architecture <alpha_lut_syn>) compiled.
+Compiling vhdl file "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/explut.vhd" in Library work.
+Entity <explut> compiled.
+Entity <explut> (Architecture <explut_syn>) compiled.
+Compiling vhdl file "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd" in Library work.
+Package <fsm_stuff> compiled.
+Entity <csvm_fsm> compiled.
+Entity <csvm_fsm> (Architecture <fsm_behav>) compiled.
+Compiling vhdl file "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" in Library work.
+Entity <csvm> compiled.
+Entity <csvm> (Architecture <synth_csvm>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <csvm> (Architecture <synth_csvm>).
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 180: No default binding for component: <sv_lut>. Generic <BIN_POINT> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 180: No default binding for component: <sv_lut>. Generic <ADDR_BITS> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 180: No default binding for component: <sv_lut>. Generic <DATA_BITS> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 188: No default binding for component: <alpha_lut>. Generic <BIN_POINT> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 188: No default binding for component: <alpha_lut>. Generic <ADDR_BITS> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 188: No default binding for component: <alpha_lut>. Generic <DATA_BITS> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 204: No default binding for component: <explut>. Generic <BIN_POINT> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 204: No default binding for component: <explut>. Generic <ADDR_BITS> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 204: No default binding for component: <explut>. Generic <DATA_BITS> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 212: No default binding for component: <csvm_fsm>. Generic <NSV> is not on the component.
+WARNING:Xst:1542 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd" line 212: No default binding for component: <csvm_fsm>. Generic <NI> is not on the component.
+Entity <csvm> analyzed. Unit <csvm> generated.
+
+Analyzing Entity <sv_lut> (Architecture <sv_lut_syn>).
+WARNING:Xst:790 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd" line 527: Index value(s) does not match array range, simulation mismatch.
+Entity <sv_lut> analyzed. Unit <sv_lut> generated.
+
+Analyzing Entity <alpha_lut> (Architecture <alpha_lut_syn>).
+WARNING:Xst:790 - "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd" line 284: Index value(s) does not match array range, simulation mismatch.
+Entity <alpha_lut> analyzed. Unit <alpha_lut> generated.
+
+Analyzing Entity <explut> (Architecture <explut_syn>).
+Entity <explut> analyzed. Unit <explut> generated.
+
+Analyzing Entity <csvm_fsm> (Architecture <fsm_behav>).
+Entity <csvm_fsm> analyzed. Unit <csvm_fsm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <csvm_fsm>.
+    Related source file is "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd".
+WARNING:Xst:647 - Input <finished> is never used.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | start                                          |
+    | Power Up State     | start                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit up counter for signal <i_count>.
+    Found 1-bit register for signal <j_count<0>>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <csvm_fsm> synthesized.
+
+
+Synthesizing Unit <explut>.
+    Related source file is "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/explut.vhd".
+    Found 128x16-bit ROM for signal <$n0001> created at line 169.
+    Found 16-bit register for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <explut> synthesized.
+
+
+Synthesizing Unit <alpha_lut>.
+    Related source file is "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd".
+    Found 243x17-bit ROM for signal <$n0001> created at line 284.
+    Found 17-bit register for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  17 D-type flip-flop(s).
+Unit <alpha_lut> synthesized.
+
+
+Synthesizing Unit <sv_lut>.
+    Related source file is "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd".
+    Found 486x18-bit ROM for signal <$n0001> created at line 527.
+    Found 18-bit register for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  18 D-type flip-flop(s).
+Unit <sv_lut> synthesized.
+
+
+Synthesizing Unit <csvm>.
+    Related source file is "N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd".
+    Found 1-bit register for signal <valid_answer>.
+    Found 1-bit register for signal <result_sign>.
+    Found 18x18-bit multiplier for signal <$n0000> created at line 266.
+    Found 16x16-bit multiplier for signal <$n0002> created at line 290.
+    Found 18-bit subtractor for signal <$n0013> created at line 264.
+    Found 40-bit subtractor for signal <$n0014> created at line 313.
+    Found 40-bit adder for signal <$n0015> created at line 316.
+    Found 40-bit comparator less for signal <$n0017> created at line 317.
+    Found 1-bit register for signal <finished>.
+    Found 18-bit up accumulator for signal <k>.
+    Found 40-bit up accumulator for signal <neg_accum>.
+    Found 40-bit up accumulator for signal <pos_accum>.
+    Found 9-bit adder for signal <sv_addr>.
+    Summary:
+	inferred   3 Accumulator(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <csvm> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+INFO:Xst:1647 - Data output of ROM <Mrom__n0001> in block <sv_lut> is tied to register <data> in block <sv_lut>.
+INFO:Xst:1650 - The register is removed and the ROM is implemented as read-only block RAM.
+INFO:Xst:1647 - Data output of ROM <Mrom__n0001> in block <alpha_lut> is tied to register <data> in block <alpha_lut>.
+INFO:Xst:1650 - The register is removed and the ROM is implemented as read-only block RAM.
+INFO:Xst:1647 - Data output of ROM <Mrom__n0001> in block <explut> is tied to register <data> in block <explut>.
+INFO:Xst:1650 - The register is removed and the ROM is implemented as read-only block RAM.
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:7]> with one-hot encoding.
+------------------------
+ State      | Encoding
+------------------------
+ start      | 0000001
+ await_data | 0000010
+ incrj      | 0010000
+ kready     | 0001000
+ resetk     | 0100000
+ incri      | 1000000
+ done       | 0000100
+------------------------
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# FSMs                             : 1
+# Block RAMs                       : 3
+ 128x16-bit single-port block RAM  : 1
+ 243x17-bit single-port block RAM  : 1
+ 486x18-bit single-port block RAM  : 1
+# Multipliers                      : 2
+ 16x16-bit multiplier              : 1
+ 18x18-bit multiplier              : 1
+# Adders/Subtractors               : 4
+ 18-bit subtractor                 : 1
+ 40-bit adder                      : 1
+ 40-bit subtractor                 : 1
+ 9-bit adder                       : 1
+# Counters                         : 1
+ 8-bit up counter                  : 1
+# Accumulators                     : 3
+ 18-bit up accumulator             : 1
+ 40-bit up accumulator             : 2
+# Registers                        : 11
+ 1-bit register                    : 11
+# Comparators                      : 1
+ 40-bit comparator less            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1291 - FF/Latch <finished> is unconnected in block <csvm>.
+WARNING:Xst:1291 - FF/Latch <k_16> is unconnected in block <csvm>.
+WARNING:Xst:1291 - FF/Latch <k_17> is unconnected in block <csvm>.
+WARNING:Xst:1291 - FF/Latch <k_14> is unconnected in block <csvm>.
+WARNING:Xst:1291 - FF/Latch <k_15> is unconnected in block <csvm>.
+
+Optimizing unit <csvm> ...
+
+Optimizing unit <csvm_fsm> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+WARNING:Xst:1291 - FF/Latch <finished> is unconnected in block <csvm>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block csvm, actual ratio is 6.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : csvm.ngr
+Top Level Output File Name         : csvm
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 24
+
+Macro Statistics :
+# RAM                              : 3
+#      128x16-bit single-port block RAM: 1
+#      243x17-bit single-port block RAM: 1
+#      486x18-bit single-port block RAM: 1
+# Registers                        : 8
+#      1-bit register              : 4
+#      40-bit register             : 3
+#      8-bit register              : 1
+# Adders/Subtractors               : 8
+#      18-bit subtractor           : 1
+#      40-bit adder                : 4
+#      40-bit subtractor           : 1
+#      8-bit adder                 : 1
+#      9-bit adder                 : 1
+# Multipliers                      : 2
+#      16x16-bit multiplier        : 1
+#      18x18-bit multiplier        : 1
+# Comparators                      : 1
+#      40-bit comparator less      : 1
+
+Cell Usage :
+# BELS                             : 564
+#      GND                         : 1
+#      INV                         : 23
+#      LUT1                        : 7
+#      LUT1_L                      : 18
+#      LUT2                        : 90
+#      LUT2_D                      : 2
+#      LUT2_L                      : 64
+#      LUT3                        : 2
+#      LUT4                        : 7
+#      LUT4_L                      : 1
+#      MUXCY                       : 192
+#      VCC                         : 1
+#      XORCY                       : 156
+# FlipFlops/Latches                : 112
+#      FD                          : 1
+#      FDE                         : 1
+#      FDR                         : 5
+#      FDRE                        : 102
+#      FDRS                        : 2
+#      FDS                         : 1
+# RAMS                             : 3
+#      RAMB16_S36                  : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 19
+#      OBUF                        : 4
+# MULTs                            : 2
+#      MULT18X18                   : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-5 
+
+ Number of Slices:                     142  out of   1920     7%  
+ Number of Slice Flip Flops:           112  out of   3840     2%  
+ Number of 4 input LUTs:               191  out of   3840     4%  
+ Number of bonded IOBs:                 24  out of    173    13%  
+ Number of BRAMs:                        3  out of     12    25%  
+ Number of MULT18X18s:                   2  out of     12    16%  
+ Number of GCLKs:                        1  out of      8    12%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 112   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.272ns (Maximum Frequency: 120.893MHz)
+   Minimum input arrival time before clock: 11.787ns
+   Maximum output required time after clock: 6.441ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.272ns (frequency: 120.893MHz)
+  Total number of paths / destination ports: 6080 / 238
+-------------------------------------------------------------------------
+Delay:               8.272ns (Levels of Logic = 43)
+  Source:            pos_accum_0 (FF)
+  Destination:       result_sign (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pos_accum_0 to result_sign
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.626   1.040  pos_accum_0 (pos_accum_0)
+     LUT2_L:I0->LO         1   0.479   0.000  csvm__n0014<0>lut (N9)
+     MUXCY:S->O            1   0.435   0.000  csvm__n0014<0>cy (csvm__n0014<0>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<1>cy (csvm__n0014<1>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<2>cy (csvm__n0014<2>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<3>cy (csvm__n0014<3>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<4>cy (csvm__n0014<4>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<5>cy (csvm__n0014<5>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<6>cy (csvm__n0014<6>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<7>cy (csvm__n0014<7>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<8>cy (csvm__n0014<8>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<9>cy (csvm__n0014<9>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<10>cy (csvm__n0014<10>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<11>cy (csvm__n0014<11>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<12>cy (csvm__n0014<12>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<13>cy (csvm__n0014<13>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<14>cy (csvm__n0014<14>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<15>cy (csvm__n0014<15>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<16>cy (csvm__n0014<16>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<17>cy (csvm__n0014<17>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<18>cy (csvm__n0014<18>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<19>cy (csvm__n0014<19>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<20>cy (csvm__n0014<20>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<21>cy (csvm__n0014<21>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<22>cy (csvm__n0014<22>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<23>cy (csvm__n0014<23>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<24>cy (csvm__n0014<24>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<25>cy (csvm__n0014<25>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<26>cy (csvm__n0014<26>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0014<27>cy (csvm__n0014<27>_cyo)
+     XORCY:CI->O           1   0.786   0.976  csvm__n0014<28>_xor (_n0014<28>)
+     LUT1_L:I0->LO         1   0.479   0.000  _n0014<28>_rt (_n0014<28>_rt)
+     MUXCY:S->O            1   0.435   0.000  csvm__n0015<28>cy (csvm__n0015<28>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<29>cy (csvm__n0015<29>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<30>cy (csvm__n0015<30>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<31>cy (csvm__n0015<31>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<32>cy (csvm__n0015<32>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<33>cy (csvm__n0015<33>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<34>cy (csvm__n0015<34>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<35>cy (csvm__n0015<35>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<36>cy (csvm__n0015<36>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0015<37>cy (csvm__n0015<37>_cyo)
+     MUXCY:CI->O           0   0.056   0.000  csvm__n0015<38>cy (csvm__n0015<38>_cyo)
+     XORCY:CI->O           1   0.786   0.000  csvm__n0015<39>_xor (_n0015<39>)
+     FDE:D                     0.176          result_sign
+    ----------------------------------------
+    Total                      8.272ns (6.256ns logic, 2.016ns route)
+                                       (75.6% logic, 24.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 67161 / 115
+-------------------------------------------------------------------------
+Offset:              11.787ns (Levels of Logic = 24)
+  Source:            xin<0> (PAD)
+  Destination:       k_13 (FF)
+  Destination Clock: clk rising
+
+  Data Path: xin<0> to k_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.976  xin_0_IBUF (xin_0_IBUF)
+     LUT2:I0->O            1   0.479   0.000  csvm__n0013<0>lut (N70)
+     MUXCY:S->O            1   0.435   0.000  csvm__n0013<0>cy (csvm__n0013<0>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<1>cy (csvm__n0013<1>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<2>cy (csvm__n0013<2>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<3>cy (csvm__n0013<3>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<4>cy (csvm__n0013<4>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<5>cy (csvm__n0013<5>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<6>cy (csvm__n0013<6>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<7>cy (csvm__n0013<7>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<8>cy (csvm__n0013<8>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<9>cy (csvm__n0013<9>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<10>cy (csvm__n0013<10>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<11>cy (csvm__n0013<11>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<12>cy (csvm__n0013<12>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<13>cy (csvm__n0013<13>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<14>cy (csvm__n0013<14>_cyo)
+     MUXCY:CI->O           1   0.056   0.000  csvm__n0013<15>cy (csvm__n0013<15>_cyo)
+     MUXCY:CI->O           0   0.056   0.000  csvm__n0013<16>cy (csvm__n0013<16>_cyo)
+     XORCY:CI->O           2   0.786   0.745  csvm__n0013<17>_xor (_n0013<17>)
+     MULT18X18:A17->P28    1   4.036   0.851  Mmult__n0000_inst_mult_1 (_n0000<28>)
+     LUT2:I1->O            1   0.479   0.000  csvm_k__n0000<12>lut (N180)
+     MUXCY:S->O            0   0.435   0.000  csvm_k__n0000<12>cy (csvm_k__n0000<12>_cyo)
+     XORCY:CI->O           1   0.786   0.000  csvm_k__n0000<13>_xor (k__n0000<13>)
+     FDRE:D                    0.176          k_13
+    ----------------------------------------
+    Total                     11.787ns (9.215ns logic, 2.572ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              6.441ns (Levels of Logic = 1)
+  Source:            FSM/state_FFd4 (FF)
+  Destination:       ready (PAD)
+  Source Clock:      clk rising
+
+  Data Path: FSM/state_FFd4 to ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.626   0.906  FSM/state_FFd4 (FSM/state_FFd4)
+     OBUF:I->O                 4.909          ready_OBUF (ready)
+    ----------------------------------------
+    Total                      6.441ns (5.535ns logic, 0.906ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
+CPU : 10.58 / 11.52 s | Elapsed : 11.00 / 11.00 s
+ 
+--> 
+
+Total memory usage is 107996 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

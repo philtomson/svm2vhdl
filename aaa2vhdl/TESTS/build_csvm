@@ -1,0 +1,10 @@
+#ghdl -a --ieee=synopsys numeric_std.vhd
+ghdl -a --ieee=synopsys monitor_pkg.vhd
+ghdl -a --ieee=synopsys alpha_lut.vhd
+ghdl -a --ieee=synopsys xin_lut.vhd
+ghdl -a --ieee=synopsys explut.vhd
+ghdl -a --ieee=synopsys sv_lut.vhd
+ghdl -a --ieee=synopsys csvm_fsm.vhd
+ghdl -a --ieee=synopsys csvm.vhd
+ghdl -a --ieee=synopsys  tb_csvm.vhd
+ghdl -e tb_csvm

@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn __projnav/csvm.xst -ofn csvm.syr
+ngdbuild -intstyle ise -dd "n:\ece590_proj3\aaa2vhdl\tests\proj3_6_4/_ngo" -nt timestamp -i  -p xc3s200-ft256-5 csvm.ngc csvm.ngd
+map -intstyle ise -p xc3s200-ft256-5 -cm area -pr b -k 4 -c 100 -o csvm_map.ncd csvm.ngd csvm.pcf
+par -w -intstyle ise -ol std -t 1 csvm_map.ncd csvm.ncd csvm.pcf
+trce -intstyle ise -e 3 -l 3 -s 5 -xml csvm csvm.ncd -o csvm.twr csvm.pcf
+netgen -intstyle ise -s 5   -pcf csvm.pcf -rpw 100 -tpw 0 -ar Structure -xon true -w -ofmt vhdl -sim csvm.ncd csvm_timesim.vhd
+bitgen -intstyle ise -f csvm.ut csvm.ncd

@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Release 7.1.01i Trace H.39
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -ise
+n:\ece590_proj3\aaa2vhdl\tests\proj3_6_4\proj3_6_4.ise -intstyle ise -e 3 -l 3
+-s 5 -xml csvm csvm.ncd -o csvm.twr csvm.pcf
+
+
+Design file:              csvm.ncd
+Physical constraint file: csvm.pcf
+Device,speed:             xc3s200,-5 (ADVANCED 1.36 2005-02-23)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  |  Clock |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) |  Phase |
+------------+------------+------------+------------------+--------+
+rst         |    4.525(R)|   -0.225(R)|clk_BUFGP         |   0.000|
+xin<0>      |   13.504(R)|   -5.465(R)|clk_BUFGP         |   0.000|
+xin<10>     |   14.246(R)|   -6.439(R)|clk_BUFGP         |   0.000|
+xin<11>     |   13.559(R)|   -6.080(R)|clk_BUFGP         |   0.000|
+xin<12>     |   13.685(R)|   -6.127(R)|clk_BUFGP         |   0.000|
+xin<13>     |   13.692(R)|   -6.269(R)|clk_BUFGP         |   0.000|
+xin<14>     |   13.637(R)|   -6.119(R)|clk_BUFGP         |   0.000|
+xin<15>     |   13.121(R)|   -5.896(R)|clk_BUFGP         |   0.000|
+xin<16>     |   13.228(R)|   -6.008(R)|clk_BUFGP         |   0.000|
+xin<17>     |   12.111(R)|   -6.755(R)|clk_BUFGP         |   0.000|
+xin<1>      |   13.468(R)|   -5.572(R)|clk_BUFGP         |   0.000|
+xin<2>      |   13.656(R)|   -5.754(R)|clk_BUFGP         |   0.000|
+xin<3>      |   13.372(R)|   -5.596(R)|clk_BUFGP         |   0.000|
+xin<4>      |   13.784(R)|   -5.872(R)|clk_BUFGP         |   0.000|
+xin<5>      |   13.244(R)|   -5.577(R)|clk_BUFGP         |   0.000|
+xin<6>      |   14.028(R)|   -6.244(R)|clk_BUFGP         |   0.000|
+xin<7>      |   13.942(R)|   -6.219(R)|clk_BUFGP         |   0.000|
+xin<8>      |   14.571(R)|   -6.670(R)|clk_BUFGP         |   0.000|
+xin<9>      |   14.272(R)|   -6.567(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  |  Clock |
+Destination | to PAD     |Internal Clock(s) |  Phase |
+------------+------------+------------------+--------+
+ready       |    8.634(R)|clk_BUFGP         |   0.000|
+result_sign |    6.403(R)|clk_BUFGP         |   0.000|
+valid_answer|    6.403(R)|clk_BUFGP         |   0.000|
+xin_addr<0> |    8.429(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   16.231|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Analysis completed Fri Jun 03 15:39:40 2005
+--------------------------------------------------------------------------------
+
+
+
+Peak Memory Usage: 82 MB

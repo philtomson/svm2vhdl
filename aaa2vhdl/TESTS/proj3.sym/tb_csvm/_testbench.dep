@@ -1,0 +1,8 @@
+.srccsvmcsvm.vhd
+ieeevarnumeric_stdieee.sym/numeric_std/prim.var
+ieeesrcnumeric_stdnumstd.vhd
+ieeevarstd_logic_1164ieee.sym/std_logic_1164/prim.var
+ieeesrcstd_logic_1164stdlogic.vhd
+.vartb_csvm(testbench)proj3.sym/tb_csvm/_testbench.var
+.srctb_csvm(testbench)tb_csvm.vhd
+.vartb_csvmproj3.sym/tb_csvm/prim.var

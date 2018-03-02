@@ -1,0 +1,5 @@
+vhdl work "sv_lut.vhd"
+vhdl work "alpha_lut.vhd"
+vhdl work "explut.vhd"
+vhdl work "csvm_fsm.vhd"
+vhdl work "csvm.vhd"

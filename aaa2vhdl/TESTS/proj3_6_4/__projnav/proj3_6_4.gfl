@@ -1,0 +1,89 @@
+# xst flow : RunXST
+sv_lut_summary.html
+# XST (Creating Lso File) : 
+csvm.lso
+# xst flow : RunXST
+csvm_summary.html
+# xst flow : RunXST
+csvm.syr
+csvm.prj
+csvm.sprj
+csvm.ana
+csvm.stx
+csvm.cmd_log
+csvm.ngc
+csvm.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"n:\ece590_proj3\aaa2vhdl\tests\proj3_6_4/_ngo"
+csvm.ngd
+csvm_ngdbuild.nav
+csvm.bld
+.untf
+csvm.cmd_log
+# Implementation : Map
+csvm_summary.html
+# Implementation : Map
+csvm_map.ncd
+csvm.ngm
+csvm.pcf
+csvm.nc1
+csvm.mrp
+csvm_map.mrp
+csvm.mdf
+csvm.cmd_log
+MAP_NO_GUIDE_FILE_CPF "csvm"
+csvm_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+csvm.twr
+csvm.twx
+csvm.tsi
+csvm.cmd_log
+# Implementation : Place & Route
+csvm_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+csvm.ncd
+csvm.par
+csvm.pad
+csvm_pad.txt
+csvm_pad.csv
+csvm.pad_txt
+csvm.dly
+reportgen.log
+csvm.xpi
+csvm.grf
+csvm.itr
+csvm_last_par.ncd
+csvm.placed_ncd_tracker
+csvm.routed_ncd_tracker
+csvm.cmd_log
+PAR_NO_GUIDE_FILE_CPF "csvm"
+# Implmentation : View/Edit Placed Design (Floorplanner)
+csvm.mfp
+# Implementation : Generate Post-Place & Route Simulation Model
+csvm_timesim.vhd
+csvm_timesim.nlf
+csvm.vhdsim_par
+csvm.par_nlf
+csvm.cmd_log
+csvm_timesim.vhd
+csvm_timesim.sdf
+csvm_timesim.sdf
+# Generate Programming File
+__projnav/csvm_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+csvm.ut
+# Generate Programming File
+csvm.bgn
+csvm.rbt
+csvm.ll
+csvm.msk
+csvm.drc
+csvm.nky
+csvm.bit
+csvm.bin
+csvm.isc
+csvm.cmd_log

@@ -1,0 +1,21 @@
+Release 7.1.01i ngdbuild H.39
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd
+n:\ece590_proj3\aaa2vhdl\tests\proj3_6_4/_ngo -nt timestamp -i -p
+xc3s200-ft256-5 csvm.ngc csvm.ngd 
+
+Reading NGO file 'N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 60468 kilobytes
+
+Writing NGD file "csvm.ngd" ...
+
+Writing NGDBUILD log file "csvm.bld"...

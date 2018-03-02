@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+<title>Slide 4</title>
+</head>
+<body text=#000000 bgcolor=#FFFFFF link=#0000CC vlink=#000080 alink=#0000CC>
+<center>
+<a href="text0.html">First page</a> <a href="text2.html">Back</a> <a href="text4.html">Continue</a> <a href="text7.html">Last page</a> <a href="img3.html">Graphics</a></center><br>
+<h1>MetaModel levels</h1><p>
+<ul><li><h2>Level 1: Implemented entirely using Ruby's built-in math functions (could be in C as well)</h2>
+<li><h2>Level 2: Implemented in Ruby using a FixedPt package which I developed.  All math is done via fixed point ops and exp() is implemented as lookup table (array) indexed by an integer. (could be considered a micro-architectural model except for the FSM)</h2>
+<li><h2>Hybrid: Same as level 2, but exp() lookup table was implemented in VHDL.  The Ruby meta model communicates with the VHDL simulator via pipes (Ruby model actually requests data from exp lookup table implemented in VHDL).</h2>
+</ul></body>
+</html>

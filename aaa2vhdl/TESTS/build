@@ -1,0 +1,6 @@
+ghdl -a --ieee=synopsys explut.vhd
+ghdl -a --ieee=synopsys external_comm_pkg.vhd
+ghdl -a --ieee=synopsys communicate.vhd
+gcc -c external_func.c
+ghdl -e -Wl,external_func.o test_comm
+

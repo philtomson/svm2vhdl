@@ -1,0 +1,9 @@
+.varfsm_stuffproj3.sym/fsm_stuff/prim.var
+.srcfsm_stuffcsvm_fsm.vhd
+ieeevarstd_logic_1164ieee.sym/std_logic_1164/prim.var
+ieeesrcstd_logic_1164stdlogic.vhd
+ieeevarnumeric_stdieee.sym/numeric_std/prim.var
+ieeesrcnumeric_stdnumstd.vhd
+.varcsvm_fsm(fsm_behav)proj3.sym/csvm_fsm/_fsm_behav.var
+.srccsvm_fsm(fsm_behav)csvm_fsm.vhd
+.varcsvm_fsmproj3.sym/csvm_fsm/prim.var

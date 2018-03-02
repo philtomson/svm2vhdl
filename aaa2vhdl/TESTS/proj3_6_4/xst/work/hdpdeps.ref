@@ -1,0 +1,32 @@
+V2 20
+FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd 2005/06/03.15:38:15 H.38
+PH work/FSM_STUFF 1117838326       FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd \
+      PB ieee/STD_LOGIC_1164 1106404628 PB std/TEXTIO 1106404628
+EN work/CSVM_FSM 1117838327        FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd \
+      PB ieee/STD_LOGIC_1164 1106404628 PH ieee/NUMERIC_STD 1106404639 \
+      PB std/TEXTIO 1106404628
+AR work/CSVM_FSM/FSM_BEHAV 1117838328 \
+      FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd EN work/CSVM_FSM 1117838327 \
+      PB ieee/STD_LOGIC_1164 1106404628 PH ieee/NUMERIC_STD 1106404639 \
+      PB std/TEXTIO 1106404628 PH work/FSM_STUFF 1117838326
+FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd 2005/06/03.15:38:18 H.38
+EN work/SV_LUT 1117838320          FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd \
+      PB ieee/STD_LOGIC_1164 1106404628 PH ieee/NUMERIC_STD 1106404639
+AR work/SV_LUT/SV_LUT_SYN 1117838321 FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd \
+      EN work/SV_LUT 1117838320
+FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd 2005/06/03.15:38:13 H.38
+EN work/CSVM 1117838329            FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd \
+      PB std/TEXTIO 1106404628 PB ieee/STD_LOGIC_1164 1106404628 \
+      PH ieee/NUMERIC_STD 1106404639
+AR work/CSVM/SYNTH_CSVM 1117838330 FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd \
+      EN work/CSVM 1117838329 CP SV_LUT    CP ALPHA_LUT      CP EXPLUT         CP CSVM_FSM
+FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/explut.vhd 2005/06/03.15:38:16 H.38
+EN work/EXPLUT 1117838324          FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/explut.vhd \
+      PB ieee/STD_LOGIC_1164 1106404628 PH ieee/NUMERIC_STD 1106404639
+AR work/EXPLUT/EXPLUT_SYN 1117838325 FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/explut.vhd \
+      EN work/EXPLUT 1117838324
+FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd 2005/06/03.15:38:12 H.38
+EN work/ALPHA_LUT 1117838322       FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd \
+      PB ieee/STD_LOGIC_1164 1106404628 PH ieee/NUMERIC_STD 1106404639
+AR work/ALPHA_LUT/ALPHA_LUT_SYN 1117838323 \
+      FL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd EN work/ALPHA_LUT 1117838322

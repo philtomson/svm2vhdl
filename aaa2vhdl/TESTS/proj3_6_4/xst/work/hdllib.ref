@@ -1,0 +1,11 @@
+PH fsm_stuff NULL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd sub00/vhpl06 1117838326
+EN explut NULL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/explut.vhd sub00/vhpl04 1117838324
+EN sv_lut NULL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd sub00/vhpl00 1117838320
+AR csvm_fsm fsm_behav N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd sub00/vhpl08 1117838328
+AR alpha_lut alpha_lut_syn N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd sub00/vhpl03 1117838323
+EN csvm_fsm NULL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm_fsm.vhd sub00/vhpl07 1117838327
+EN csvm NULL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd sub00/vhpl09 1117838329
+AR csvm synth_csvm N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/csvm.vhd sub00/vhpl10 1117838330
+EN alpha_lut NULL N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/alpha_lut.vhd sub00/vhpl02 1117838322
+AR sv_lut sv_lut_syn N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/sv_lut.vhd sub00/vhpl01 1117838321
+AR explut explut_syn N:/ece590_proj3/aaa2vhdl/tests/proj3_6_4/explut.vhd sub00/vhpl05 1117838325

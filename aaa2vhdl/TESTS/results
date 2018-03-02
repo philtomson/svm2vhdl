@@ -1,0 +1,171 @@
+It's gonna be SLOWWWWWWW!!!!!!!!!!!!!!!
+Couldn't find fixed pt: thing's will run slow, but it'll work
+kerneltype is: 1
+numKernelParams is: 1 Fixnum
+gamma is: 99.9999999999999
+b is: -0.115961844536494
+num_support_vectors is: 242
+num_features is: 2
+norm_type is: 4
+numNormParams is: 2
+number of bits is: 16
+@multiplier is: 65536
+@ni (num_features) is: 2
+@cSVM_kRpar (gamma) is: 
+@fKparam is: 50.0
+min is: -0.245
+resolution is: 0.0019140625
+num_cases is: 127
+<<<<<<<<<<<<<<<<<<<<@exp_table.create>>>>>>>>>>>>>>>
+create alpha_fp lookup table
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+0.86195129,-1.2353323
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: 0.822113037109375
+correct!
+answer is: 0.822113037109375 pass is: true
+
+0.90818191,1.4833819
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -0.640716552734375
+wrong: but known error
+answer is: -0.640716552734375 pass is: true
+
+0.07448764,-0.60681143
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: 0.159164428710938
+correct!
+answer is: 0.159164428710938 pass is: true
+
+0.97276737,0.45654275
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -1.274658203125
+correct!
+answer is: -1.274658203125 pass is: false
+
+0.75518505,0.22003614
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -0.244598388671875
+wrong: but known error
+answer is: -0.244598388671875 pass is: true
+
+-2.1254684,-1.8510498
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: 0.579879760742188
+correct!
+answer is: 0.579879760742188 pass is: true
+
+-0.023656407,-1.0014752
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -1.4288330078125
+correct!
+answer is: -1.4288330078125 pass is: false
+
+-0.47562398,-1.4939536
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -1.55503845214844
+correct!
+answer is: -1.55503845214844 pass is: false
+
+-1.61617,0.59348199
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -0.931167602539062
+correct!
+answer is: -0.931167602539062 pass is: false
+
+-1.2855138,-0.26355145
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: 1.35455322265625
+correct!
+answer is: 1.35455322265625 pass is: true
+
+0.14335824,1.0525744
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -0.595947265625
+correct!
+answer is: -0.595947265625 pass is: false
+
+-0.20822608,-0.6461447
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -0.340621948242188
+wrong: but known error
+answer is: -0.340621948242188 pass is: true
+
+0.65649164,0.84419692
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -1.21029663085938
+correct!
+answer is: -1.21029663085938 pass is: false
+
+-0.55898105,0.05941444
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: 1.79920959472656
+correct!
+answer is: 1.79920959472656 pass is: true
+
+1.2560104,0.79882888
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: -1.01315307617188
+correct!
+answer is: -1.01315307617188 pass is: false
+
+1.8745357,1.1859273
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
+accum is: 1.03471374511719
+correct!
+answer is: 1.03471374511719 pass is: true
+
+-0.27131127,1.588611
+gaussian_kernel_fixedint...
+to_fixed_pt: bits = 16
+to_fixed_pt: binpt = 16
+multval is: 522.448979591836
